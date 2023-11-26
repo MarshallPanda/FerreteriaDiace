@@ -1,0 +1,286 @@
+
+body {
+  padding-top: 56px;
+  background-color: #23272A;
+}
+
+/*Menu*/
+header {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 115px;
+    background-color: #FFFFFF; /*Color de Fondo menu*/
+    z-index: 10;
+    background-position: center top;
+    background-size: auto 200px;
+    background-repeat: repeat-x;
+  }
+  header .inner {
+    font-size: 60px;
+    max-width: 1060px;
+    margin: 0 auto;
+    display: flex;
+    height: 95px; /*Position en y a y logo*/
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  /*Posicion Y y X del logo*/
+  header .logo {
+    display: block;
+    width: 90px;
+    height: 100px;
+    position: absolute;
+    top: 1;
+    left: 0;
+  
+    text-align: center;
+  }
+  header .logo img {
+    width: 110px;
+    margin-top: 7px;
+    
+  }
+  header nav {
+    display: none;
+  
+  }
+  header nav a {
+    font-family: "Arial", serif;
+    font-size: 18px;
+    color: black; /*Color de letras del header o menu*/
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    margin: 8px;
+  
+    
+  }
+  header nav a.active, header nav a:hover {
+    color: rgb(55, 22, 202); /*Color de letras del header o menu primario*/
+  }
+  @media screen and (min-width: 800px) {
+    header nav {
+      display: block;
+    }
+  }
+  header .burger {
+    display: block;
+    position: relative;
+    top: -6px;
+    padding-left: 30px;
+  }
+  header .burger:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 30px;
+    height: 2px;
+    background: white;
+    box-shadow: 0 12px 0 0 white, 0 6px 0 0 white;
+  }
+  @media screen and (min-width: 800px) {
+    header .burger {
+      display: none;
+    }
+  }
+  
+  header .WhatsApp-link {
+    width: 72px;
+    text-align: center;
+    position: absolute;
+    right: 10px;
+    top: 50px;
+    font-family: "Arial", sans-serif;
+    font-size: 18px;
+    color: #1bc969;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    text-decoration: none;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #46cc7e; /*Color linea WhatsApp*/
+    text-shadow: 1px 1px 1px #46cc7e; /*Color shadow text whatsapp (sombra)*/
+  }
+
+
+
+
+
+
+
+
+
+
+  /*H1 de titulo de catalogo*/
+.Titulo-Producto{
+    padding-top: 120px;
+    font-size: 45px;
+    position: relative;
+    text-transform: uppercase;
+    color: aliceblue;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgb(21, 0, 255);
+    
+
+}
+
+.container{
+  border-color: #ff0b0b;
+  max-width: 100%;
+  padding-top: 60px;
+  flex-wrap: wrap-reverse;
+}
+
+/* card */
+.dress-card-img-top {
+  width:100%;
+  border-radius: 7px 7px 0 0;
+}
+
+.dress-card-body {
+  padding:1.5rem;
+  background: #fff;
+  border-radius: 0 0 7px 7px;
+}
+
+.dress-card-title {
+  line-height: 0.5rem;
+}
+
+.dress-card-crossed {
+  text-decoration: line-through;
+}
+
+.dress-card-price {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.dress-card-off {
+  color: red; /*Color de descuento*/
+}
+
+.dress-card-para {
+  margin-bottom: 0.2rem;
+  font-size: 1.0rem;
+  margin-bottom: 0rem;
+}
+
+.dress-card {
+  border-radius: 14px;
+}
+
+.dress-card-heart {
+  font-size: 1em;
+  color: #fff200;
+  margin: 4.5px;
+  position: absolute;
+  left: 2px;
+  top: -1px;
+  
+}
+
+.surprise-bubble {
+  position: absolute;
+  bottom: 12rem;
+  right: 2rem;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background: #000000;
+  padding: 1ch;
+  color: white;
+  -webkit-transition: all 0.55s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.55s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.surprise-bubble a {
+  font-size: 0.65em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: white;
+  font-family: arial;
+  text-decoration: none;
+  position: absolute;
+  top: 9px;
+  left: 30px; /*Position text calidad*/
+  opacity: 0;
+  -webkit-transition-delay: 2s;
+  transition-delay: 2s;
+  -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.surprise-bubble:hover {
+  border-radius: 999rem;
+  padding: 1rem;
+  width: 26%;
+  height: 30px;
+  background: #000000; /*Color de fondo de Calidad*/
+  color: rgb(255, 255, 255); /*Color de texto*/
+  -webkit-transition: all 0.55s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.55s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.surprise-bubble:hover a {
+  opacity: 1;
+  -webkit-transition-delay: 2s;
+  /* Safari */
+  transition-delay: 2s;
+  -webkit-transition: opacity 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: opacity 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.card-button {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 15px;
+  padding: 9px;
+}
+.card-button a {
+  text-decoration: none;
+}
+
+.card-button-inner {
+  padding: 10px;
+  border-radius: 3px;
+}
+
+.bag-button {
+  background: #72dd76;
+  color: rgb(0, 0, 0);
+  
+}
+
+.bag-button :hover{
+  background: #72dd76;
+}
+
+.wish-button {
+  border: 1px solid #ff0000; /*cuadro de disponibilidad*/
+  color: #000000; /*Color texto*/
+}
+
+
+@media (max-width: 991px) {
+  .dress-card-title {
+    line-height: 0.5rem;
+    font-size: 13px;
+  }
+
+
+  .surprise-bubble{
+    top: 1px;
+
+  }
+  dress-card-body{
+    max-height: 100px;
+    height: 100px;
+  }
+
+}
